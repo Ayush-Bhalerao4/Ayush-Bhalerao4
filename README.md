@@ -20,9 +20,9 @@ $ whoami
 
 $ status --current
 > Seeking full-time roles:
+    - Data Analyst
+    - Data Scientist
     - Machine Learning Engineer
-    - AI Engineer
-    - Software Engineer
 > Open to relocation (India + international)
 
 $ cat interests.txt
@@ -41,7 +41,7 @@ $ cat interests.txt
 | 🎓 **Program** | B.Tech, CSE (AI & Data Science) |
 | 🏫 **University** | MIT World Peace University, Pune |
 | 📍 **Based in** | India — open to relocation |
-| 🎯 **Looking for** | ML Engineer · AI Engineer · SWE |
+| 🎯 **Looking for** | Data Analyst · Data Scientist · ML Engineer |
 | 🧰 **Toolchain** | VS Code · Git · Docker · Postman |
 | 📫 **Reach me** | [Email](mailto:ayushbhalerao619@gmail.com) · [LinkedIn](https://linkedin.com/in/ayush-bhalerao-0323b92b2) |
 
