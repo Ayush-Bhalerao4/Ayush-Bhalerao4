@@ -5,12 +5,6 @@
      ═══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./light.svg">
-    <img alt="Ayush's Developer Profile" src="./dark.svg" width="860">
-  </picture>
-</div>
 
 <!-- ─────────────── ANIMATED TYPING HEADER ─────────────── -->
 
@@ -40,8 +34,12 @@
      This file is terminal-header.svg in this same repo. It boots itself line-by-line
      over ~6s and then STAYS visible permanently — see the fix note inside that file
      for why the old version used to fade back out. -->
-<img src="https://raw.githubusercontent.com/Ayush-Bhalerao4/Ayush-Bhalerao4/main/terminal-header.svg" alt="Terminal system info panel" width="860" />
-
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./light.svg">
+    <img alt="Ayush's Developer Profile" src="./dark.svg" width="860">
+  </picture>
 </div>
 
 <br/>
@@ -72,14 +70,14 @@ I combine strong **Python & SQL foundations** with visualization tools like **Po
 
 | Domain | Proficiency | Details |
 |:---|:---:|:---|
-| **Data Analysis & EDA** | ⬛⬛⬛⬛⬛ | Pandas, NumPy, data wrangling, statistical analysis |
-| **Data Visualization** | ⬛⬛⬛⬛⬛ | Plotly, Matplotlib, Seaborn, Streamlit dashboards |
-| **SQL & Databases** | ⬛⬛⬛⬛⬜ | Complex queries, joins, CTEs, PostgreSQL, MongoDB |
-| **Business Intelligence** | ⬛⬛⬛⬛⬜ | Power BI, Tableau, KPI tracking, report automation |
-| **Machine Learning** | ⬛⬛⬛⬛⬜ | Regression, classification, clustering, model evaluation |
-| **Financial Analysis** | ⬛⬛⬛⬜⬜ | Risk assessment, forecasting, financial modeling |
-| **Excel / Spreadsheets** | ⬛⬛⬛⬛⬜ | Pivot tables, VLOOKUP, macros, advanced formulas |
-| **Deep Learning & NLP** | ⬛⬛⬛⬜⬜ | Neural networks, text classification, GNNs |
+| **Data Analysis & EDA** | ⬛⬜⬜⬜⬜ | Pandas, NumPy, data wrangling, statistical analysis |
+| **Data Visualization** | ⬛⬜⬜⬜⬜ | Plotly, Matplotlib, Seaborn, Streamlit dashboards |
+| **SQL & Databases** | ⬛⬜⬜⬜⬜ | Complex queries, joins, CTEs, PostgreSQL, MongoDB |
+| **Business Intelligence** | ⬛⬛⬜⬜⬜ | Power BI, Tableau, KPI tracking, report automation |
+| **Machine Learning** | ⬛⬛⬜⬜⬜ | Regression, classification, clustering, model evaluation |
+| **Financial Analysis** | ⬛⬛⬜⬜⬜ | Risk assessment, forecasting, financial modeling |
+| **Excel / Spreadsheets** | ⬛⬜⬜⬜⬜ | Pivot tables, VLOOKUP, macros, advanced formulas |
+| **Deep Learning & NLP** | ⬛⬛⬜⬜⬜ | Neural networks, text classification, GNNs |
 
 </div>
 
