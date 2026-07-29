@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" width="860" height="480">
+  <defs>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,212,255,0)" />
+      <stop offset="50%" stop-color="rgba(0,212,255,0.08)" />
+      <stop offset="100%" stop-color="rgba(0,212,255,0)" />
+    </linearGradient>
+    <linearGradient id="borderGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00D4FF" />
+      <stop offset="50%" stop-color="#0891B2" />
+      <stop offset="100%" stop-color="#00D4FF" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="0.8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes scanline {
+      0% { transform: translateY(-480px); }
+      100% { transform: translateY(480px); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+    @keyframes fadeIn1 { 0%, 8% { opacity: 0; } 10% { opacity: 1; } }
+    @keyframes fadeIn2 { 0%, 13% { opacity: 0; } 15% { opacity: 1; } }
+    @keyframes fadeIn3 { 0%, 18% { opacity: 0; } 20% { opacity: 1; } }
+    @keyframes fadeIn4 { 0%, 23% { opacity: 0; } 25% { opacity: 1; } }
+    @keyframes fadeIn5 { 0%, 28% { opacity: 0; } 30% { opacity: 1; } }
+    @keyframes fadeIn6 { 0%, 33% { opacity: 0; } 35% { opacity: 1; } }
+    @keyframes fadeIn7 { 0%, 38% { opacity: 0; } 40% { opacity: 1; } }
+    @keyframes fadeIn8 { 0%, 43% { opacity: 0; } 45% { opacity: 1; } }
+    @keyframes fadeIn9 { 0%, 48% { opacity: 0; } 50% { opacity: 1; } }
+    @keyframes fadeIn10 { 0%, 53% { opacity: 0; } 55% { opacity: 1; } }
+    @keyframes fadeIn11 { 0%, 58% { opacity: 0; } 60% { opacity: 1; } }
+    @keyframes fadeIn12 { 0%, 63% { opacity: 0; } 65% { opacity: 1; } }
+    @keyframes fadeIn13 { 0%, 68% { opacity: 0; } 70% { opacity: 1; } }
+    @keyframes fadeIn14 { 0%, 73% { opacity: 0; } 75% { opacity: 1; } }
+    @keyframes fadeIn15 { 0%, 78% { opacity: 0; } 80% { opacity: 1; } }
+    @keyframes fadeInContact { 0%, 82% { opacity: 0; } 85% { opacity: 1; } }
+    @keyframes fadeInStats { 0%, 88% { opacity: 0; } 92% { opacity: 1; } }
+    @keyframes dataScroll {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-200px); }
+    }
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.7; }
+    }
+    @keyframes recording {
+      0%, 100% { fill: #FF4444; opacity: 1; }
+      50% { fill: #FF4444; opacity: 0.3; }
+    }
+    .line1 { animation: fadeIn1 6s ease forwards; opacity: 0; }
+    .line2 { animation: fadeIn2 6s ease forwards; opacity: 0; }
+    .line3 { animation: fadeIn3 6s ease forwards; opacity: 0; }
+    .line4 { animation: fadeIn4 6s ease forwards; opacity: 0; }
+    .line5 { animation: fadeIn5 6s ease forwards; opacity: 0; }
+    .line6 { animation: fadeIn6 6s ease forwards; opacity: 0; }
+    .line7 { animation: fadeIn7 6s ease forwards; opacity: 0; }
+    .line8 { animation: fadeIn8 6s ease forwards; opacity: 0; }
+    .line9 { animation: fadeIn9 6s ease forwards; opacity: 0; }
+    .line10 { animation: fadeIn10 6s ease forwards; opacity: 0; }
+    .line11 { animation: fadeIn11 6s ease forwards; opacity: 0; }
+    .line12 { animation: fadeIn12 6s ease forwards; opacity: 0; }
+    .line13 { animation: fadeIn13 6s ease forwards; opacity: 0; }
+    .line14 { animation: fadeIn14 6s ease forwards; opacity: 0; }
+    .line15 { animation: fadeIn15 6s ease forwards; opacity: 0; }
+    .lineContact { animation: fadeInContact 6s ease forwards; opacity: 0; }
+    .lineStats { animation: fadeInStats 6s ease forwards; opacity: 0; }
+  </style>
+
+  <!-- ═══ BACKGROUND ═══ -->
+  <rect width="860" height="480" rx="12" fill="#0A0E17" />
+
+  <!-- ═══ TITLE BAR ═══ -->
+  <rect width="860" height="36" rx="12" fill="#141B2D" />
+  <rect y="24" width="860" height="12" fill="#141B2D" />
+  <!-- Traffic light dots -->
+  <circle cx="22" cy="18" r="6" fill="#FF5F57" />
+  <circle cx="42" cy="18" r="6" fill="#FEBC2E" />
+  <circle cx="62" cy="18" r="6" fill="#28C840" />
+  <!-- Title text -->
+  <text x="430" y="22" text-anchor="middle" font-family="'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace" font-size="12" fill="#8B949E">
+    ayush@analyst ~ % ./profile.sh --live
+  </text>
+  <!-- Recording indicator -->
+  <circle cx="815" cy="18" r="5" fill="#FF4444" style="animation: recording 2s infinite;">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <text x="798" y="22" text-anchor="end" font-family="monospace" font-size="9" fill="#FF4444" font-weight="bold">● LIVE</text>
+
+  <!-- ═══ OUTER BORDER GLOW ═══ -->
+  <rect x="8" y="44" width="844" height="428" rx="4" fill="none" stroke="#0891B2" stroke-width="1" opacity="0.5" />
+
+  <!-- ═══ DIVIDER LINE ═══ -->
+  <line x1="295" y1="48" x2="295" y2="468" stroke="#0891B2" stroke-width="1" opacity="0.4" />
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       LEFT PANEL: DATA.FLOW
+       ══════════════════════════════════════════════════════════════════ -->
+  <text x="20" y="68" font-family="monospace" font-size="11" fill="#00D4FF" font-weight="bold" filter="url(#textGlow)" letter-spacing="3">DATA.FLOW</text>
+
+  <!-- Animated data columns -->
+  <clipPath id="dataClip">
+    <rect x="16" y="78" width="270" height="380" />
+  </clipPath>
+
+  <g clip-path="url(#dataClip)" opacity="0.5">
+    <!-- Column 1 -->
+    <g style="animation: dataScroll 8s linear infinite;">
+      <text x="24" y="100" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.7">01001 REVENUE  ↑12.4%</text>
+      <text x="24" y="118" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.5">10110 MARGINS  ↑ 3.1%</text>
+      <text x="24" y="136" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.6">00101 CHURN    ↓ 2.8%</text>
+      <text x="24" y="154" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.4">11010 CLTV     ↑ 8.5%</text>
+      <text x="24" y="172" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.7">01110 ROI      ↑15.2%</text>
+      <text x="24" y="190" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.5">10011 ARPU     ↑ 4.7%</text>
+      <text x="24" y="208" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.6">00111 NPS       82.0</text>
+      <text x="24" y="226" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.4">11001 CAC      ↓ 6.3%</text>
+      <text x="24" y="244" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.7">01010 GMV      ↑22.1%</text>
+      <text x="24" y="262" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.5">10100 EBITDA   ↑ 9.4%</text>
+      <text x="24" y="280" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.6">01101 DAU      ↑18.6%</text>
+      <text x="24" y="298" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.4">10001 MRR      ↑11.3%</text>
+      <text x="24" y="316" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.7">00110 OPEX     ↓ 5.2%</text>
+      <text x="24" y="334" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.5">11100 CAPEX    → 0.8%</text>
+      <text x="24" y="352" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.6">01011 P/E      ↑ 7.1%</text>
+      <text x="24" y="370" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.4">10010 WACC     ↓ 1.9%</text>
+      <text x="24" y="388" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.7">01001 REVENUE  ↑12.4%</text>
+      <text x="24" y="406" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.5">10110 MARGINS  ↑ 3.1%</text>
+      <text x="24" y="424" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.6">00101 CHURN    ↓ 2.8%</text>
+      <text x="24" y="442" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.4">11010 CLTV     ↑ 8.5%</text>
+      <text x="24" y="460" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.7">01110 ROI      ↑15.2%</text>
+      <text x="24" y="478" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.5">10011 ARPU     ↑ 4.7%</text>
+      <text x="24" y="496" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.6">00111 NPS       82.0</text>
+      <text x="24" y="514" font-family="monospace" font-size="10" fill="#0891B2" opacity="0.4">11001 CAC      ↓ 6.3%</text>
+    </g>
+  </g>
+
+  <!-- Mini bar chart visualization -->
+  <g transform="translate(30, 370)" opacity="0.6">
+    <text x="0" y="0" font-family="monospace" font-size="9" fill="#58A6FF">─── QUARTERLY ───</text>
+    <rect x="0" y="10" width="40" height="8" rx="1" fill="#00D4FF" opacity="0.8">
+      <animate attributeName="width" values="40;55;40" dur="3s" repeatCount="indefinite" />
+    </rect>
+    <text x="0" y="16" font-family="monospace" font-size="7" fill="#0D1117">Q1</text>
+    <rect x="0" y="22" width="55" height="8" rx="1" fill="#0891B2" opacity="0.8">
+      <animate attributeName="width" values="55;38;55" dur="4s" repeatCount="indefinite" />
+    </rect>
+    <text x="0" y="28" font-family="monospace" font-size="7" fill="#0D1117">Q2</text>
+    <rect x="0" y="34" width="35" height="8" rx="1" fill="#00D4FF" opacity="0.8">
+      <animate attributeName="width" values="35;65;35" dur="3.5s" repeatCount="indefinite" />
+    </rect>
+    <text x="0" y="40" font-family="monospace" font-size="7" fill="#0D1117">Q3</text>
+    <rect x="0" y="46" width="70" height="8" rx="1" fill="#06B6D4" opacity="0.8">
+      <animate attributeName="width" values="70;50;70" dur="4.5s" repeatCount="indefinite" />
+    </rect>
+    <text x="0" y="52" font-family="monospace" font-size="7" fill="#0D1117">Q4</text>
+  </g>
+
+  <!-- Sparkline -->
+  <g transform="translate(140, 380)" opacity="0.5">
+    <text x="0" y="0" font-family="monospace" font-size="9" fill="#58A6FF">── TREND ──</text>
+    <polyline points="0,45 15,38 30,42 45,30 60,35 75,22 90,28 105,15 120,20 135,8" fill="none" stroke="#00D4FF" stroke-width="1.5">
+      <animate attributeName="stroke-dasharray" values="0 300;300 0" dur="3s" fill="freeze" />
+    </polyline>
+    <circle cx="135" cy="8" r="3" fill="#00D4FF">
+      <animate attributeName="opacity" values="0;1" dur="3s" fill="freeze" />
+      <animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite" begin="3s" />
+    </circle>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       RIGHT PANEL: SYSTEM.INFO
+       ══════════════════════════════════════════════════════════════════ -->
+
+  <!-- Header -->
+  <text x="310" y="68" font-family="monospace" font-size="11" fill="#00D4FF" font-weight="bold" filter="url(#textGlow)" letter-spacing="3">SYSTEM.INFO</text>
+  <text x="310" y="86" font-family="monospace" font-size="14" fill="#06B6D4" font-weight="bold" class="line1">ayush@analyst</text>
+  <line x1="310" y1="92" x2="540" y2="92" stroke="#0891B2" stroke-width="1" opacity="0.4" class="line1" />
+
+  <!-- Info rows with dots -->
+  <text x="318" y="112" font-family="monospace" font-size="12" class="line2">
+    <tspan fill="#06B6D4" font-weight="bold">Subject</tspan><tspan fill="#1E3A5F">: ................. </tspan><tspan fill="#C9D1D9">Ayush Bhalerao</tspan>
+  </text>
+  <text x="318" y="132" font-family="monospace" font-size="12" class="line3">
+    <tspan fill="#06B6D4" font-weight="bold">Role</tspan><tspan fill="#1E3A5F">: .................... </tspan><tspan fill="#C9D1D9">Data · Business · Financial</tspan>
+  </text>
+  <text x="318" y="152" font-family="monospace" font-size="12" class="line4">
+    <tspan fill="#06B6D4" font-weight="bold">Origin</tspan><tspan fill="#1E3A5F">: .................. </tspan><tspan fill="#C9D1D9">Pune, India</tspan>
+  </text>
+  <text x="318" y="172" font-family="monospace" font-size="12" class="line5">
+    <tspan fill="#06B6D4" font-weight="bold">Education</tspan><tspan fill="#1E3A5F">: ............... </tspan><tspan fill="#C9D1D9">B.Tech CSE (AI &amp; DS)</tspan>
+  </text>
+  <text x="318" y="192" font-family="monospace" font-size="12" class="line6">
+    <tspan fill="#06B6D4" font-weight="bold">University</tspan><tspan fill="#1E3A5F">: .............. </tspan><tspan fill="#C9D1D9">MIT WPU, Pune</tspan>
+  </text>
+  <text x="318" y="212" font-family="monospace" font-size="12" class="line7">
+    <tspan fill="#28C840" font-weight="bold">Status</tspan><tspan fill="#1E3A5F">: .................. </tspan><tspan fill="#28C840">Open · Seeking · Ready</tspan>
+  </text>
+  <text x="318" y="232" font-family="monospace" font-size="12" class="line8">
+    <tspan fill="#06B6D4" font-weight="bold">ToolChain</tspan><tspan fill="#1E3A5F">: ............... </tspan><tspan fill="#C9D1D9">Python, SQL, Excel</tspan>
+  </text>
+
+  <!-- Separator -->
+  <line x1="310" y1="244" x2="840" y2="244" stroke="#0891B2" stroke-width="1" opacity="0.3" class="line9" />
+
+  <!-- Core skills -->
+  <text x="318" y="264" font-family="monospace" font-size="12" class="line9">
+    <tspan fill="#58A6FF" font-weight="bold">Core.Analysis</tspan><tspan fill="#1E3A5F">: ......... </tspan><tspan fill="#C9D1D9">EDA, Statistics, Modeling</tspan>
+  </text>
+  <text x="318" y="284" font-family="monospace" font-size="12" class="line10">
+    <tspan fill="#58A6FF" font-weight="bold">Core.Viz</tspan><tspan fill="#1E3A5F">: .............. </tspan><tspan fill="#C9D1D9">Plotly, Tableau, Power BI</tspan>
+  </text>
+  <text x="318" y="304" font-family="monospace" font-size="12" class="line11">
+    <tspan fill="#58A6FF" font-weight="bold">Core.Database</tspan><tspan fill="#1E3A5F">: ......... </tspan><tspan fill="#C9D1D9">PostgreSQL, MongoDB, SQL</tspan>
+  </text>
+  <text x="318" y="324" font-family="monospace" font-size="12" class="line12">
+    <tspan fill="#58A6FF" font-weight="bold">Core.ML</tspan><tspan fill="#1E3A5F">: ............... </tspan><tspan fill="#C9D1D9">scikit-learn, PyTorch, TF</tspan>
+  </text>
+  <text x="318" y="344" font-family="monospace" font-size="12" class="line13">
+    <tspan fill="#58A6FF" font-weight="bold">Core.Dev</tspan><tspan fill="#1E3A5F">: .............. </tspan><tspan fill="#C9D1D9">Flask, React, REST APIs</tspan>
+  </text>
+
+  <!-- Separator -->
+  <line x1="310" y1="356" x2="840" y2="356" stroke="#0891B2" stroke-width="1" opacity="0.3" class="line14" />
+
+  <!-- Contact section -->
+  <text x="316" y="370" font-family="monospace" font-size="10" fill="#FEBC2E" font-weight="bold" class="lineContact">─ Contact ─────────────────────────────────────────</text>
+  <text x="318" y="390" font-family="monospace" font-size="12" class="lineContact">
+    <tspan fill="#06B6D4" font-weight="bold">Grid.Email</tspan><tspan fill="#1E3A5F">: ............ </tspan><tspan fill="#C9D1D9">ayushbhalerao619@gmail.com</tspan>
+  </text>
+  <text x="318" y="410" font-family="monospace" font-size="12" class="lineContact">
+    <tspan fill="#06B6D4" font-weight="bold">Grid.LinkedIn</tspan><tspan fill="#1E3A5F">: ......... </tspan><tspan fill="#C9D1D9">ayush-bhalerao-0323b92b2</tspan>
+  </text>
+  <text x="318" y="430" font-family="monospace" font-size="12" class="lineContact">
+    <tspan fill="#06B6D4" font-weight="bold">Grid.GitHub</tspan><tspan fill="#1E3A5F">: ........... </tspan><tspan fill="#C9D1D9">Ayush-Bhalerao4</tspan>
+  </text>
+
+  <!-- Live Stats -->
+  <text x="316" y="450" font-family="monospace" font-size="10" fill="#FEBC2E" font-weight="bold" class="lineStats">─ Live Stats ──────────────────────────────────────</text>
+  <text x="318" y="466" font-family="monospace" font-size="11" class="lineStats">
+    <tspan fill="#28C840">█</tspan><tspan fill="#8B949E"> See live GitHub stats badges below in README ↓</tspan>
+  </text>
+
+  <!-- ═══ SCANLINE EFFECT ═══ -->
+  <rect width="860" height="8" fill="url(#scanGrad)" opacity="0.5" style="animation: scanline 4s linear infinite;" />
+
+  <!-- ═══ BLINKING CURSOR ═══ -->
+  <rect x="318" y="456" width="8" height="14" fill="#00D4FF" opacity="0" class="lineStats">
+    <animate attributeName="opacity" values="0;0;1;1;0" dur="1.2s" repeatCount="indefinite" begin="5.5s" />
+  </rect>
+
+  <!-- ═══ CORNER DECORATIONS ═══ -->
+  <!-- Top-left bracket -->
+  <polyline points="12,55 12,48 19,48" fill="none" stroke="#00D4FF" stroke-width="1.5" opacity="0.6" />
+  <!-- Top-right bracket -->
+  <polyline points="848,55 848,48 841,48" fill="none" stroke="#00D4FF" stroke-width="1.5" opacity="0.6" />
+  <!-- Bottom-left bracket -->
+  <polyline points="12,413 12,468 19,468" fill="none" stroke="#00D4FF" stroke-width="1.5" opacity="0.6" />
+  <!-- Bottom-right bracket -->
+  <polyline points="848,413 848,468 841,468" fill="none" stroke="#00D4FF" stroke-width="1.5" opacity="0.6" />
+</svg>
