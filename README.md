@@ -5,6 +5,12 @@
      ═══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./light.svg">
+    <img alt="Ayush's Developer Profile" src="./dark.svg" width="860">
+  </picture>
+</div>
 
 <!-- ─────────────── ANIMATED TYPING HEADER ─────────────── -->
 
