@@ -28,61 +28,15 @@
 &nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ayush-Bhalerao4)
 
-</div>
-
 <br/>
 
-<!-- ═══════════════════════════════════════════════════════════════════════
-     SECTION 1: TERMINAL PANEL + SYSTEM INFO
-     ═══════════════════════════════════════════════════════════════════════ -->
+<!-- ─────────────── TERMINAL HEADER SVG (the animated system-info panel) ───────────────
+     This file is terminal-header.svg in this same repo. It boots itself line-by-line
+     over ~6s and then STAYS visible permanently — see the fix note inside that file
+     for why the old version used to fade back out. -->
+<img src="https://raw.githubusercontent.com/Ayush-Bhalerao4/Ayush-Bhalerao4/main/terminal-header.svg" alt="Terminal system info panel" width="860" />
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-```
-ayush@analyst:~$ whoami
-────────────────────────────────────────
-  Name      : Ayush Bhalerao
-  Program   : B.Tech CSE (AI & Data Science)
-  University: MIT World Peace University, Pune
-  Year      : Final Year
-
-ayush@analyst:~$ cat roles.txt
-────────────────────────────────────────
-  ► Data Analyst
-  ► Business Analyst
-  ► Financial Analyst
-
-ayush@analyst:~$ cat interests.txt
-────────────────────────────────────────
-  ► Data Analytics & Business Intelligence
-  ► Financial Modeling & Risk Assessment
-  ► Dashboard Design & Data Storytelling
-  ► Statistical Analysis & Forecasting
-
-ayush@analyst:~$ echo $STATUS
-  Open to relocation (India + Intl)
-```
-
-</td>
-<td width="50%" valign="top">
-
-### ⚡ System Info
-
-| | |
-|:---|:---|
-| 🎓 **Program** | B.Tech, CSE (AI & Data Science) |
-| 🏫 **University** | MIT World Peace University, Pune |
-| 📍 **Location** | India — open to relocation |
-| 🎯 **Seeking** | Data Analyst · Business Analyst · Financial Analyst |
-| 🧰 **Core Tools** | Python · SQL · Excel · Power BI · Tableau |
-| 📊 **Frameworks** | Pandas · NumPy · Plotly · Streamlit |
-| 📫 **Reach me** | [Email](mailto:ayushbhalerao619@gmail.com) · [LinkedIn](https://linkedin.com/in/ayush-bhalerao-0323b92b2) |
-
-</td>
-</tr>
-</table>
+</div>
 
 <br/>
 
@@ -218,7 +172,7 @@ Flask web app that evaluates written answers with **AI assistance** instead of a
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════════════
-     SECTION 6: GITHUB ANALYTICS (FIXED — all images working)
+     SECTION 6: GITHUB ANALYTICS
      ═══════════════════════════════════════════════════════════════════════ -->
 
 ## 📊 GitHub Analytics
@@ -238,7 +192,7 @@ Flask web app that evaluates written answers with **AI assistance** instead of a
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════════════
-     SECTION 7: GITHUB TROPHIES (FIXED)
+     SECTION 7: GITHUB TROPHIES
      ═══════════════════════════════════════════════════════════════════════ -->
 
 ## 🏆 GitHub Trophies
@@ -252,7 +206,7 @@ Flask web app that evaluates written answers with **AI assistance** instead of a
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════════════
-     SECTION 8: CONTRIBUTION ACTIVITY GRAPH (FIXED)
+     SECTION 8: CONTRIBUTION ACTIVITY GRAPH
      ═══════════════════════════════════════════════════════════════════════ -->
 
 ## 📈 Contribution Activity
@@ -266,7 +220,8 @@ Flask web app that evaluates written answers with **AI assistance** instead of a
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════════════
-     SECTION 9: PAC-MAN CONTRIBUTION GRAPH (replaces snake)
+     SECTION 9: PAC-MAN CONTRIBUTION GRAPH
+     Needs .github/workflows/pacman.yml to actually run — see setup notes.
      ═══════════════════════════════════════════════════════════════════════ -->
 
 ## 🕹️ Pac-Man Contribution Graph
@@ -278,6 +233,8 @@ Flask web app that evaluates written answers with **AI assistance** instead of a
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ayush-Bhalerao4/Ayush-Bhalerao4/output/pacman-contribution-graph.svg" />
   <img alt="Pac-Man Contribution Graph" src="https://raw.githubusercontent.com/Ayush-Bhalerao4/Ayush-Bhalerao4/output/pacman-contribution-graph.svg" />
 </picture>
+
+<sub>Regenerates automatically every 12 hours via GitHub Actions — first run also fires on every push to <code>main</code>.</sub>
 
 </div>
 
